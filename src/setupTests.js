@@ -9,3 +9,5 @@ const noScroll = () => { };
 
 // Para que no salga scroll al probar la accion startUploading
 Object.defineProperty(window, 'scrollTo', { value: noScroll, writable: true });
+
+HTMLCanvasElement.prototype.getContext = () => { };
